@@ -10,15 +10,19 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 
 import com.qa.pages.AddToCartPage;
+import com.qa.pages.CheckoutPage;
 import com.qa.pages.ComparePage;
 import com.qa.pages.CreateAnAccountPage;
 import com.qa.pages.HomePage;
 import com.qa.pages.MobilePage;
 import com.qa.pages.MyAccountPage;
+import com.qa.pages.MyDashboard;
+import com.qa.pages.MyOrdersPage;
 import com.qa.pages.MyWishlistPage;
 import com.qa.pages.ShareYourWishlistPage;
 import com.qa.pages.SonyXperiaPage;
 import com.qa.pages.TvPage;
+import com.qa.pages.ViewOrderPage;
 import com.qa.utilities.ReadConfig;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
@@ -35,6 +39,10 @@ public class BaseClass {
 	ShareYourWishlistPage syw;
 	MyWishlistPage mwl;
 	TvPage tp;
+	MyDashboard md;
+	CheckoutPage cop;
+	MyOrdersPage mop;
+	ViewOrderPage vop;
 	ReadConfig readconfig = new ReadConfig();
 	
 	public String Driver = readconfig.getDriver();
@@ -65,6 +73,10 @@ public class BaseClass {
 		syw = new ShareYourWishlistPage(driver);
 		mwl = new MyWishlistPage(driver);
 		tp = new TvPage(driver);
+		md = new MyDashboard(driver);
+		cop = new CheckoutPage(driver);
+		mop = new MyOrdersPage(driver);
+		vop = new ViewOrderPage(driver);
 	}
 	
 	@AfterClass

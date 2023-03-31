@@ -20,7 +20,7 @@ public class MyWishlistPage {
     }
     
     //Add to cart button
-    @FindBy(xpath="//*[@id=\"item_66006\"]/td[5]/div/button")
+    @FindBy(css="button[class='button btn-cart'][onclick^='addWItemToCart']")
     WebElement btnAddToCart;
     public WebElement getAddToCartBtn() {
     	return btnAddToCart;

@@ -27,7 +27,7 @@ public class TC_CreateAccount_VerifyShareWishlist_005 extends BaseClass{
     	//Enter last name
     	cap.getLastNameTxt().sendKeys("Bhelonde");
     	//Enter email address
-    	cap.getEmailCreateTxt().sendKeys("ashutosh@gmail.com");
+    	cap.getEmailCreateTxt().sendKeys("pratiik220@gmail.com");
     	//Enter password
     	cap.getPasswordCreateTxt().sendKeys("Pratik@1243");
     	//Confirm your password

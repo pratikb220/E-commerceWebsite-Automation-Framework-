@@ -61,5 +61,47 @@ public class AddToCartPage {
 	public WebElement getUpdateQuantityBtn() {
 		return btnUpdateQuantity;
 	}
-
+	
+	//Estimate shipping and tax field
+	//Select country
+	@FindBy(xpath="//*[@id=\"country\"]")
+	WebElement selCountry;
+	public WebElement getCountrySel() {
+		return selCountry;
+	}
+	
+	//Select state or province
+	@FindBy(xpath="//*[@id=\"region_id\"]")
+	WebElement selState;
+	public WebElement getStateSel() {
+		return selState;
+	}
+	
+	//Zip code
+	@FindBy(xpath="//*[@id=\"postcode\"]")
+	WebElement txtZip;
+	public WebElement getZipTxt() {
+		return txtZip;
+	}
+	
+	//Estimate button
+	@FindBy(xpath="//*[@id=\"shipping-zip-form\"]/div/button")
+	WebElement btnEstimate;
+	public WebElement getEstimateBtn() {
+		return btnEstimate;
+	}
+	
+	//Flat rate checkbox
+	@FindBy(xpath="//*[@id=\"s_method_flatrate_flatrate\"]")
+	WebElement cbFlatRate;
+	public WebElement getFlatRateCb() {
+		return cbFlatRate;
+	}
+    
+	//Update total button
+	@FindBy(xpath="//*[@id=\"co-shipping-method-form\"]/div/button")
+	WebElement btnUpdateTotal;
+	public WebElement getUpdateTotalBtn() {
+		return btnUpdateTotal;
+	}
 }
